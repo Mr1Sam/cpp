@@ -182,7 +182,7 @@ int main() {
         delete[] rotatedImageRight.pixels;
         rotatedImageRight.pixels = nullptr;
 
-        BMP rotatedImageLeft = rotateBitmapCounterclock
+        //BMP rotatedImageLeft = rotateBitmapCounterclock
         BMP rotatedImageLeft = rotateBitmapCounterclockwise(image);
         saveBitmap("rotated_left_123.bmp", rotatedImageLeft);
         delete[] rotatedImageLeft.pixels;
