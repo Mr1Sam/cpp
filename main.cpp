@@ -14,7 +14,7 @@ BMP loadBitmap(std::string filename) {
     BMP image;
 
     std::ifstream inputFile(filename, std::ios::binary);
-    if (!inputFile) {
+   if (!inputFile.is_open()) {
         throw std::runtime_error("Unable to open the BMP file for reading.");
     }
 
